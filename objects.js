@@ -6,7 +6,9 @@ const keysObj = {
 // each key.
 
 // Code here
-
+function keys( obj ) {
+	Object.keys( obj ).forEach( key => console.log( key ) );
+}
 
 
 // Next problem
@@ -19,7 +21,11 @@ const valuesObj = {
 // each value.
 
 // Code here
-
+function values( obj ) {
+	for ( const prop in obj ) {
+		console.log( obj[ prop ] );
+	}
+}
 
 
 // Next problem
@@ -35,7 +41,11 @@ const deltaBrainwave = null;
 */
 
 // Code here
-
+const fry = {
+	  bestFriend: "bender"
+	, deltaBrainwave
+	, name
+};
 
 
 
@@ -49,7 +59,7 @@ const phone = {
 // Destructure make and model into their own variables
 
 // Code here
-
+const { make, model, year } = phone;
 
 
 // Next problem
@@ -67,10 +77,13 @@ const cardHolder = {
 	, memberSince: "Oct 12 2001"
 };
 // Write a function named merge which takes two parameters - person and cardholder. 'merge' will return a new object
-// containing all of the properties of both objects. This should not alter either of the parameters.
+// containing all of the properties of both objects. This should not alter either of the parameters. The objects
+// passed to merge may not always match the above structure.
 
 // Code here
-
+function merge( person, cardholder ) {
+	return Object.assign( {}, person, cardholder );
+}
 
 
 // Next problem
