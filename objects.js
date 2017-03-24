@@ -28,7 +28,7 @@ const deltaBrainwave = null;
 	Create a variable named 'fry' and set it equal to an object with three properties:
 		- name: set equal to the 'name' variable
 		- deltaBrainwave: set equal to the deltaBrainwave variable
-		- bestFriend: set equal to "Bending Unit"
+		- bestFriend: set equal to "bender"
 	The 'name' and 'deltaBrainwave' properties should be set using object property shorthand.
 */
 
@@ -43,7 +43,7 @@ const phone = {
 	, model: "xl"
 	, year: 2016
 };
-// Destructure make and model into their own variables
+// Destructure make, model and year into their own variables
 
 // Code here
 
