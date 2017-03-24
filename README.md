@@ -1,13 +1,13 @@
 <img src="https://devmounta.in/img/logowhiteblue.png" width="250" align="right">
 
-JS-Arrays
+JS-Data-Structures
 =========
 
 ## Objective
-Better understand arrays in Javascript by completing a series of activities
+Better understand data structures in JavaScript by completing a series of activities
 
 ## Directions
-Fork this repo, clone your fork, then open arrays.js and complete all the activities.
+Fork this repo, clone your fork, then open `arrays.js` and `objects.js` and complete all the activities.
 
 * COMMIT AND PUSH YOUR CODE OFTEN!
 
