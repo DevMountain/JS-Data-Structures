@@ -6,9 +6,6 @@ const keysObj = {
 // each key.
 
 // Code here
-function keys( obj ) {
-	Object.keys( obj ).forEach( key => console.log( key ) );
-}
 
 
 // Next problem
@@ -21,11 +18,6 @@ const valuesObj = {
 // each value.
 
 // Code here
-function values( obj ) {
-	for ( const prop in obj ) {
-		console.log( obj[ prop ] );
-	}
-}
 
 
 // Next problem
@@ -41,11 +33,6 @@ const deltaBrainwave = null;
 */
 
 // Code here
-const fry = {
-	  bestFriend: "bender"
-	, deltaBrainwave
-	, name
-};
 
 
 
@@ -59,7 +46,6 @@ const phone = {
 // Destructure make and model into their own variables
 
 // Code here
-const { make, model, year } = phone;
 
 
 // Next problem
@@ -81,9 +67,6 @@ const cardHolder = {
 // passed to merge may not always match the above structure.
 
 // Code here
-function merge( person, cardholder ) {
-	return Object.assign( {}, person, cardholder );
-}
 
 
 // Next problem
@@ -106,21 +89,7 @@ function merge( person, cardholder ) {
 
 // Code here
 
-class Character {
-	constructor( name, level, health ) {
-		this.name = name;
-		this.level = level;
-		this.health = health;
-	}
 
-	takeDamage( amount ) {
-		this.health -= amount;
-	}
-
-	dealDamage() {
-		return Math.random() * this.level;
-	}
-}
 
 /*
 	Create a 'minion' variable from the character class, giving it a name of "minion", a level of 1, and
@@ -129,7 +98,6 @@ class Character {
 
 // Code here
 
-const minion = new Character( "minion", 1, 10 );
 
 /*
 	Invoke the minion's 'takeDamage' method passing in 2. console.log the minion's health to make sure it updated.
@@ -137,7 +105,6 @@ const minion = new Character( "minion", 1, 10 );
 
 // Code here
 
-minion.takeDamage( 2 );
 
 /*
 	Create a class named Player which extends 'Character'. 'Player' accepts the same arguments as 'Character' as well as
@@ -155,23 +122,6 @@ minion.takeDamage( 2 );
 
 // Code here
 
-class Player extends Character {
-	constructor( name, level, health, mana ) {
-		super( name, level, health );
-
-		this.mana = mana;
-	}
-
-	castSpell() {
-		if ( this.mana >= 10 ) {
-			this.mana -= 10;
-			return 10;
-		} else {
-			this.takeDamage( 10 );
-			return 0;
-		}
-	}
-}
 
 /*
 	Create a 'leeroy' variable from the 'Player' class, giving it a name of "Leeroy Jenkins", a level of 5, health of
@@ -180,20 +130,15 @@ class Player extends Character {
 
 // Code here
 
-const leeroy = new Player( "Leeroy Jenkins", 5, 100, 50 );
 
 /*
 	Invoke leeroy's 'castSpell' method 3 times and console.log the leeroy object to confirm 'castSpell' works as expected
 */
 
 // Code here
-leeroy.castSpell();
-leeroy.castSpell();
-leeroy.castSpell();
 
 
 // Create a variable named leeroysDamage and set it equal to the result of invoking leeroy's dealDamage method
 
 // Code here
 
-const leeroysDamage = leeroy.dealDamage();

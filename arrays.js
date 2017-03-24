@@ -2,9 +2,7 @@ const firstArray = [ 10, 20, 30 ];
 // Create a function named 'first' that is given 'firstArray' as the argument and  returns the first item in the given array.
 
 // Code Here
-function first( firstArray ) {
-	return firstArray[ 0 ];
-}
+
 
 // Next problem
 
@@ -14,9 +12,6 @@ const arr = [ 40, 50, 60 ];
 
 
 // Code Here
-function last( arr ) {
-	return arr[ arr.length -1 ];
-}
 
 // Next Problem
 
@@ -25,9 +20,7 @@ const family = [ 'Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland' ];
 // Create a function named 'looper' that is given family as it's only argument, loops through the given array, and console.logs every item in the array.
 
 // Code Here
-function looper( family ) {
-	family.forEach( person => console.log( person ) );
-}
+
 
 // Next problem
 
@@ -36,9 +29,7 @@ const letters = [ 'A', 'B', 'C', 'D', 'E' ];
 // Write a function called reversedLooper that is given letters as it's only argument and loops through the given array backwards console.log-ing every item in the array starting at the end.
 
 // Code Here
-function reversedLooper( letters ) {
-	looper( letters.slice().reverse() );
-}
+
 
 // Next Problem
 
@@ -47,9 +38,7 @@ const nums = [ 1, 2, 3, 6, 22, 98, 45, 23, 22, 12 ];
 // Write a function named evenFinder that is given nums as it's only argument and removes all values that aren't even from the given array.
 
 // Code Here
-function evenFinder( nums ) {
-	return nums.filter( num => !( num % 2 ) );
-}
+
 
 // Next problem
 
@@ -61,12 +50,6 @@ const numbersArray = [ 1, 2, 34, 54, 55, 34, 32, 11, 19, 17, 54, 66, 13 ];
 
 
 // Code Here
-function divider( nums ) {
-	return [
-		  evenFinder( nums )
-		, nums.filter( num => num % 2 )
-	];
-}
 
 
 // Next Problem
@@ -76,9 +59,7 @@ const usernames = [ 'j-robz', 'brackula', 'great-brettin' ];
 // contains should return true if 'username' is in the array and false if it is not.
 
 // Code here
-function contains( usernames, username ) {
-	return usernames.includes( username );
-}
+
 
 // Next problem
 
@@ -88,11 +69,10 @@ const dos = [ 2, 4, 6, 8, 10 ];
 // array containing all of the elements of both arrays. Use the spread operator to achieve this.
 
 // Code here
-function combine( one, two ) {
-	return [ ...one, ...two ];
-}
+
 
 // Next problem
+
 const args = [ "Hey there", "Jimbo", true ];
 function greeter( salutation, name, excited ) {
 	const greeting = `${ salutation }, ${ name }`;
@@ -107,9 +87,7 @@ function greeter( salutation, name, excited ) {
 // will invoke and return the result of 'callback' passing all of the elements in 'args' as individual arguments.
 
 // Code here
-function spreadInvoke( args, callback ) {
-	return callback( ...args );
-}
+
 
 // Next problem
 
@@ -118,9 +96,7 @@ const str = 'this is my sentence';
 // Write a function called reverse that takes a given str as it's only argument and returns that string after it's been reversed
 
 // Code Here
-function reverse( str ) {
-	return str.split( "" ).reverse().join( "" );
-}
+
 
 // Next Problem
 
@@ -140,15 +116,9 @@ function reverse( str ) {
  */
 
 // Code here
-function map( arr, callback ) {
-	const ret = [];
-	for ( let i = 0; i < arr.length; i++ ) {
-		ret.push( callback( arr[ i ] ) );
-	}
-	return ret;
-}
 
-// NEXT PROBLEM
+
+// Next problem
 
 const arr1 = [ 1, 2, 3, 4 ];
 const arr2 = [ 2, 4, 5, 6 ];
@@ -159,9 +129,7 @@ const arr2 = [ 2, 4, 5, 6 ];
 */
 
 // Code Here
-function both( arrOne, arrTwo ) {
-	return Array.from( new Set( arrOne.filter( element => arrTwo.includes( element ) ) ) );
-}
+
 
 // NEXT PROBLEM
 
@@ -199,7 +167,7 @@ const colt = {
 */
 
 // Code Here
-devMountainEmployees.push( jeremy, cahlan, dallin, colt );
+
 
 /*
  Now loop through the devMountainEmployees array and add a 'location' property to each object. For Jeremy, Cahlan, and
@@ -207,10 +175,4 @@ devMountainEmployees.push( jeremy, cahlan, dallin, colt );
 */
 
 // Code Here
-for ( let i = 0; i < devMountainEmployees.length; i++ ) {
-	if ( devMountainEmployees[ i ].name === "Dallin" ) {
-		devMountainEmployees[ i ].location = "Dallas";
-	} else {
-		devMountainEmployees[ i ].location = "Provo";
-	}
-}
+
